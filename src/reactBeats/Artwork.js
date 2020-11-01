@@ -36,7 +36,7 @@ const StyledArtwork = styled.svg`
   }
 `;
 
-function Artwork({ kick, snare, tom, hiHat, crash }) {
+function Artwork({ kick, snareRight, snareLeft, tomRight, tomLeft, hiHat, crash }) {
   return (
     <StyledArtwork
       xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ function Artwork({ kick, snare, tom, hiHat, crash }) {
             d="M359.8 237.9c2.5 2.4 5.3 4.9 7.8 7.3-2.3.9-5 1.7-7.5 2.1-1.7-2.9-3.4-5.8-5-8.8 1.4-.1 3.2-.7 4.7-.6zM339 251c.6-2.8 1.3-5.8 1.9-8.6-.6 0-1.4-.5-2-.7-7.3 2.9-15.3 6.6-20.9 10.7 6.4 0 14.6-1 21-1.4z"
           ></path>
         </g>
-        <g id="tom-2" onClick={tom}>
+        <g id="tom-2" onClick={tomRight}>
           <path
             fill="#FDC22A"
             d="M258.4 273l2 31.7s20-6.5 40.5-2.6l-3.3-31.9c-.1-.1-27.6-3.3-39.2 2.8z"
@@ -102,7 +102,7 @@ function Artwork({ kick, snare, tom, hiHat, crash }) {
             d="M293.5 273.8l3.4 24.8s-3.3-.8-7.9-1l-2.8-23.8c.1 0 3.5-.5 7.3 0z"
           ></path>
         </g>
-        <g id="tom-1" onClick={tom}>
+        <g id="tom-1" onClick={tomLeft}>
           <path
             fill="#FDC22A"
             d="M237.6 273l-2 31.7s-20-6.5-40.5-2.6l3.3-31.9c.1-.1 27.6-3.3 39.2 2.8z"
@@ -134,7 +134,7 @@ function Artwork({ kick, snare, tom, hiHat, crash }) {
             d="M175.3 239.5c1.8 2.4 3.9 4.9 5.7 7.3-2.1.4-4.5.8-6.7.8-1.1-2.7-2.1-5.4-3.1-8.2 1.2.1 2.8-.1 4.1.1zm-19.6 8.4c.9-2.3 1.9-4.8 2.8-7.1-.5-.1-1.2-.6-1.6-.9-6.6 1.5-14 3.6-19.3 6.3 5.5 1 12.6 1.2 18.1 1.7z"
           ></path>
         </g>
-        <g id="snare-2" onClick={snare}>
+        <g id="snare-2" onClick={snareRight}>
           <path
             fill="#FDC22A"
             d="M341.4 316.9l-7 50.6s-29.7-11.5-61.5-4.6l9.5-56.1c.1-.1 42.2-.7 59 10.1z"
@@ -152,7 +152,7 @@ function Artwork({ kick, snare, tom, hiHat, crash }) {
             d="M335.2 320.3l-6.4 42.3s-5.2-2.7-12.2-4.5l5.7-41.1c-.1 0 9.7 2.1 12.9 3.3z"
           ></path>
         </g>
-        <g id="snare-1" onClick={snare}>
+        <g id="snare-1" onClick={snareLeft}>
           <path
             fill="#FDC22A"
             d="M154.6 316.9l7 50.6s29.7-11.5 61.5-4.6l-9.5-56.1c-.1-.1-42.2-.7-59 10.1z"
